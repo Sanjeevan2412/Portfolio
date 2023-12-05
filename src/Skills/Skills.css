@@ -1,0 +1,81 @@
+.Skills {
+  background-color: var(--secondary);
+  height: fit-content;
+  width: 100vw;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.SkillsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px calc(10px + 6vw);
+  color: var(--tertiary);
+}
+
+.Line {
+  border-top: 5px solid var(--tertiary);
+  border-radius: 5px;
+}
+
+.SkillsTitle1 {
+  color: var(--primary);
+}
+
+.SkillsDiv1 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.SkillsDiv2 {
+  display: flex;
+  gap: 80px;
+}
+
+.SkillsTitle2Div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+
+.SkillsTitle2 {
+  font-size: clamp(20px, 2.5vw, 50px);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.SkillsTitle2Desc {
+  font-size: clamp(13px, 1.3vw, 43px);
+  font-weight: 400;
+}
+
+.SkillsDesc {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+  font-size: clamp(25px, 3vw, 75px);
+  font-weight: 900;
+  color: var(--primary);
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 769px) {
+  .SkillsDiv1 {
+    gap: 40px;
+  }
+
+  .SkillsTitle2Div {
+    width: 90%;
+  }
+
+  .SkillsDiv2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,110 @@
+.Projects {
+  background-color: var(--tertiary);
+  min-height: 100vh;
+  width: 100vw;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.ProjectsContent {
+  display: flex;
+  flex-direction: column;
+  padding: 50px calc(10px + 6vw);
+  height: calc(100vh - 100px);
+  color: var(--secondary);
+  gap: 50px;
+}
+
+.ProjectsDiv {
+  display: flex;
+  flex-direction: column;
+  height: -webkit-fill-available;
+  justify-content: center;
+}
+
+.ProjectsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  gap: calc(10px + 2vw);
+  height: calc(100% - 100px);
+}
+
+.Slider {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.SliderDiv {
+  display: flex;
+  gap: 10px;
+  width: -webkit-fill-available;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.Arrow {
+  height: 30px;
+  fill: var(--secondary);
+  cursor: pointer;
+}
+
+.Arrow:hover {
+  fill: var(--primary);
+  opacity: 0.9;
+}
+
+.DotDiv {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Dots {
+  height: 10px;
+  width: 10px;
+  background-color: var(--secondary);
+  border-radius: 100%;
+}
+
+@media only screen and (min-width: 1440px) {
+  .Projects {
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 3/4) {
+  .Projects {
+    min-height: auto;
+  }
+
+  .ProjectsContent {
+    height: calc(60vh - 100px);
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .Projects {
+    min-height: auto;
+  }
+
+  .ProjectsContent {
+    height: auto;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .Projects {
+    min-height: auto;
+  }
+
+  .ProjectsContent {
+    height: auto;
+  }
+}

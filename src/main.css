@@ -1,0 +1,33 @@
+:root {
+  --primary: #ff5540;
+  --secondary: #f7f5f1;
+  --tertiary: #161613;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Josefin Sans Variable", sans-serif;
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.Title {
+  font-size: clamp(50px, 6vw, 120px);
+  font-weight: 900;
+}
